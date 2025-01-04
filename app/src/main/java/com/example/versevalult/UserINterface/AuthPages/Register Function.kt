@@ -18,7 +18,7 @@ fun registerUser(
     val database = FirebaseDatabase.getInstance().reference
 
     // Check for empty fields
-    if (fullName.isBlank() || email.isBlank() || password.isBlank() || location.isBlank()) {
+    if (fullName.isBlank() || email.isBlank() || password.isBlank()) {
         onResult("All fields are required.")
         return
     }
