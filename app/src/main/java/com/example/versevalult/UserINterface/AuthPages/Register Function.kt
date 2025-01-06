@@ -36,7 +36,7 @@ fun registerUser(
                 val firebaseUser = auth.currentUser
                 val userId = firebaseUser?.uid ?: return@addOnCompleteListener
 
-                // Create a User object
+                // Create a User object for sendint it to sirebase
                 val user = User(
                     name = fullName,
                     email = email,
